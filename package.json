@@ -2,6 +2,7 @@
   "name": "react_pd_411_1",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://okovtun.github.io/react_pd_411_1/",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
@@ -12,6 +13,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -36,6 +39,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "json-loader": "^0.5.7",
     "react-scripts": "^5.0.1"
   }
